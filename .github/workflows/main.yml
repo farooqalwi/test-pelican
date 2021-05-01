@@ -30,7 +30,7 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.GH_PAT }}
         BASE_BRANCH: main # The branch the action should deploy from.
         BRANCH: main # The branch the action should deploy to.
-        CNAME: nimbinatus.com
+        SITEURL: https://farooqalwi.github.io/pelican-web
         FOLDER: output # The folder the action should deploy.
 #         BUILD_SCRIPT: npm install && npm run-script build # The build script the action should run prior to deploying.
 #     - name: GitHub Pages Deploy
