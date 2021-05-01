@@ -24,13 +24,13 @@ jobs:
       run: |
         touch ./output/.nojekyll
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@master
+      uses: farooqalwi/test-pelican@main
       if: success()
       env:
         ACCESS_TOKEN: ${{ secrets.GH_PAT }}
-        BASE_BRANCH: source # The branch the action should deploy from.
-        BRANCH: master # The branch the action should deploy to.
-        CNAME: nimbinatus.com
+        BASE_BRANCH: main # The branch the action should deploy from.
+        BRANCH: main # The branch the action should deploy to.
+        SITEURL: https://farooqalwi.github.io/pelican-web
         FOLDER: output # The folder the action should deploy.
 #         BUILD_SCRIPT: npm install && npm run-script build # The build script the action should run prior to deploying.
 #     - name: GitHub Pages Deploy
