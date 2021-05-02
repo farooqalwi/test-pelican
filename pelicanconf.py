@@ -4,7 +4,7 @@
 AUTHOR = 'ALWI'
 SITENAME = 'Test Pelican'
 SITEURL = 'https://farooqalwi.github.io/test-pelican'
-THEME = 'Elegant'
+THEME = 'elegant'
 
 PATH = 'content'
 
