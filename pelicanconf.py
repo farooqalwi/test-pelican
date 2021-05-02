@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'ALWI'
-SITENAME = 'Test Pelican'
+SITENAME = 'Test Pelican Website'
 SITEURL = 'https://farooqalwi.github.io/test-pelican'
 
 PATH = 'content'
