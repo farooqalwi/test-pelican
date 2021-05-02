@@ -124,3 +124,13 @@ def publish(c):
 def pelican_run(cmd):
     cmd += ' ' + program.core.remainder  # allows to pass-through args to pelican
     pelican_main(shlex.split(cmd))
+
+
+
+@task
+def theme_sync(c):
+    """Make a fresh shallow copy of pelican-elegant theme"""
+    c.run("rm -rf themes")
+    c.run(
+        "git clone --jobs 8 --recurse-submodules --depth 1 --shallow-submodules https://github.com/Pelican-Elegant/elegant.git themes/elegant"
+    )
