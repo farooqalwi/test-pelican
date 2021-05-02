@@ -126,7 +126,6 @@ def pelican_run(cmd):
     pelican_main(shlex.split(cmd))
 
 
-
 @task
 def theme_sync(c):
     """Make a fresh shallow copy of pelican-elegant theme"""
