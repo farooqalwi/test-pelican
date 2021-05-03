@@ -1,11 +1,11 @@
-name: Deploy alwi blog
+name: Deploy pelican website
 on:
   push:
     branches:
       - master
 jobs:
   build_job:
-    name: Deploy blog
+    name: Deploy website
     runs-on: ubuntu-latest
     steps:
       - name: Install Python
