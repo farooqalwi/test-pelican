@@ -1,11 +1,11 @@
-name: Deploy alwi blog
+name: Deploy pelican website
 on:
   push:
     branches:
       - master
 jobs:
   build_job:
-    name: Deploy blog
+    name: Deploy website
     runs-on: ubuntu-latest
     steps:
       - name: Install Python
@@ -22,6 +22,9 @@ jobs:
           key: pelican-4.2.0-${{ hashFiles('requirements.txt') }}
           restore-keys: |
             pelican-4.2.0-
+      - name: Clone theme repo
+        run: |
+          git clone https://github.com/farooqalwi/elegant.git
       - name: Install Pelican
         run: |
           pip install -r requirements.txt
