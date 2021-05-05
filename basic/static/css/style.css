@@ -1,14 +1,14 @@
 body {
   font-family: monospace;
   font-size: 100%;
-  background-color: green;
+  background-color: white;
   color: #111;
   width: 80%;
   min-width: 400px;
   min-height: 200px;
   padding: 1em;
   margin: 5% 10%;
-  border: thin solid red;
+  border: thin solid gray;
   border-radius: 5px;
   display: block;
 }
