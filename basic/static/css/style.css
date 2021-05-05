@@ -8,7 +8,7 @@ body {
   min-height: 200px;
   padding: 1em;
   margin: 5% 10%;
-  border: thin solid gray;
+  border: thin solid red;
   border-radius: 5px;
   display: block;
 }
